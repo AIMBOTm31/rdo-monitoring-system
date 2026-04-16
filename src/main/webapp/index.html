@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhattisgarh Rural Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #FF9933, #FFCC66);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header img {
+            height: 70px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+        
+        .header p {
+            font-size: 14px;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: #138808;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            margin: 0 10px;
+            display: inline-block;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        
+        .nav a:hover {
+            background: #0a5a06;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2016/11/14/04/13/farmer-1822530_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #FF9933;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background: #e68a00;
+        }
+        
+        /* Features */
+        .features {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #138808;
+            margin: 15px 0;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+        }
+        
+        /* Schemes Preview */
+        .schemes-preview {
+            background: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .schemes-preview h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .scheme-list {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .scheme-item {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .scheme-item:hover {
+            background: #f9f9f9;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav a {
+                display: block;
+                margin: 5px;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="img/logo1.jpg" alt="State Emblem">
+    <h1>Chhattisgarh Rural Development Department</h1>
+    <p>Panchayat & Rural Development | Government of Chhattisgarh</p>
+</div>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="publicSchemes.jsp">Government Schemes</a>
+    <a href="findRDO.jsp">Find Your RDO</a>
+    <a href="login.html">RDO Login</a>
+</div>
+
+<div class="hero">
+    <div>
+        <h2>सरकारी योजनाएं आपके द्वार</h2>
+        <h2>Government Schemes At Your Doorstep</h2>
+        <p>जानिए आपके लिए कौन सी योजनाएं हैं उपलब्ध | Know which schemes are available for you</p>
+        <a href="publicSchemes.jsp" class="btn">View All Schemes →</a>
+    </div>
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>View Government Schemes</h3>
+        <p>See all active schemes from Panchayat & Rural Development Department</p>
+        <a href="publicSchemes.jsp">Browse Schemes →</a>
+    </div>
+    
+    <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h3>Find Your RDO</h3>
+        <p>Search by village or block to find your Rural Development Officer</p>
+        <a href="findRDO.jsp">Find RDO →</a>
+    </div>
+    
+    <div class="feature-card">
+        <div class="feature-icon">📞</div>
+        <h3>Get Help</h3>
+        <p>Contact your block office for application assistance</p>
+        <a href="findRDO.jsp">Contact Now →</a>
+    </div>
+</div>
+
+<div class="schemes-preview">
+    <h2>Government Schemes</h2>
+    <div class="scheme-list">
+        <div class="scheme-item">
+            <span>🌾 Krishak Unnati Yojana - Interest-free crop loans</span>
+            <a href="schemeDetail.jsp?code=CG-AGR-001">View Details →</a>
+        </div>
+        <div class="scheme-item">
+            <span>🏠 Pradhan Mantri Awas Yojana (Gramin) - Housing for all</span>
+            <a href="schemeDetail.jsp?code=CG-PM-001">View Details →</a>
+        </div>
+        <div class="scheme-item">
+            <span>👧 Rani Durgavati Scheme - Financial help for girls</span>
+            <a href="schemeDetail.jsp?code=CG-WCD-089">View Details →</a>
+        </div>
+        <div class="scheme-item">
+            <span>🐄 Gaudham Yojana - Cattle shelter development</span>
+            <a href="schemeDetail.jsp?code=CG-AH-056">View Details →</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>(c) 2026 Panchayat and Rural Development Department, Government of Chhattisgarh</p>
+    <p>Designed for Villagers | For assistance call: 1800-0000-0000X</p>
+</div>
+
+</body>
+</html>
